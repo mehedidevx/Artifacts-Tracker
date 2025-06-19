@@ -14,7 +14,7 @@ const MyLikedArtifacts = () => {
   useEffect(() => {
     if (user?.email) {
       axios
-        .get(`http://localhost:3000/likedArtifacts?userEmail=${user.email}`)
+        .get(`https://artifacts-tracker-server-eta.vercel.app/likedArtifacts?userEmail=${user.email}`)
         .then((res) => setLikedArtifacts(res.data))
         .catch((err) => console.error(err));
     }
@@ -32,7 +32,7 @@ const MyLikedArtifacts = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         fetch(
-          `http://localhost:3000/likedArtifacts/${artifactId}?userEmail=${user.email}`,
+          `https://artifacts-tracker-server-eta.vercel.app/likedArtifacts/${artifactId}?userEmail=${user.email}`,
           {
             method: "DELETE",
           }

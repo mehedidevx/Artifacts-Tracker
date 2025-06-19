@@ -31,7 +31,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        loader: () => fetch("http://localhost:3000/artifacts"),
+        loader: () => fetch("https://artifacts-tracker-server-eta.vercel.app/artifacts"),
         element: <Home />,
       },
       {
@@ -44,12 +44,12 @@ const router = createBrowserRouter([
       },
       {
         path: "/all-artifacts",
-        loader: () => fetch("http://localhost:3000/artifacts"),
+        loader: () => fetch("https://artifacts-tracker-server-eta.vercel.app/artifacts"),
         element: <AllArtifacts></AllArtifacts>,
       },
       {
         path: "/my-artifacts",
-        loader: () => fetch("http://localhost:3000/artifacts"),
+        loader: () => fetch("https://artifacts-tracker-server-eta.vercel.app/artifacts"),
         element: (
           <PrivateRoute>
             <MyArtifacts></MyArtifacts>
@@ -88,7 +88,7 @@ const router = createBrowserRouter([
       {
         path: "/artifact-details/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/artifacts/${params.id}`),
+          fetch(`https://artifacts-tracker-server-eta.vercel.app/artifacts/${params.id}`),
         element: (
           <PrivateRoute>
             <ArtifactDetails />
@@ -98,7 +98,7 @@ const router = createBrowserRouter([
       {
         path: "/updateArtifacts/:id",
         loader: ({ params }) =>
-          fetch(`http://localhost:3000/artifacts/${params.id}`),
+          fetch(`https://artifacts-tracker-server-eta.vercel.app/artifacts/${params.id}`),
         element: (
           <PrivateRoute>
             <UpdateArtifacts></UpdateArtifacts>

@@ -1,5 +1,5 @@
 const SearchFood = async (search = "") => {
-  const res = await fetch(`http://localhost:3000/artifactsSearch?search=${search}`);
+  const res = await fetch(`https://artifacts-tracker-server-eta.vercel.app/artifactsSearch?search=${search}`);
   const data = await res.json();
   return data;
 };

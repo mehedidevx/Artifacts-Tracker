@@ -18,7 +18,7 @@ const AllArtifacts = () => {
   const [allArtifacts, setAllArtifacts] = useState([]);
   const [likedIds, setLikedIds] = useState([]);
   const [loading, setLoading] = useState(true);
-  const API_BASE = "http://localhost:3000";
+  const API_BASE = "https://artifacts-tracker-server-eta.vercel.app";
 
   useEffect(() => {
     fetchArtifacts("");

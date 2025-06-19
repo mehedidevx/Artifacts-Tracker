@@ -24,7 +24,7 @@ const UpdateArtifacts = () => {
       adderEmail: form.adderEmail.value,
     };
 
-    fetch(`http://localhost:3000/artifacts/${artifact._id}`, {
+    fetch(`https://artifacts-tracker-server-eta.vercel.app/artifacts/${artifact._id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

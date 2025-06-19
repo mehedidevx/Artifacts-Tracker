@@ -25,7 +25,7 @@ const AddArtifact = () => {
       likeCount: 0,
     };
 
-    fetch("http://localhost:3000/artifacts", {
+    fetch("https://artifacts-tracker-server-eta.vercel.app/artifacts", {
       method: "POST",
       headers: {
         "content-type": "application/json",
