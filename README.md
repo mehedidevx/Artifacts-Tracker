@@ -3,7 +3,7 @@
 A full-stack web application to explore, add, and track historically significant artifacts such as the Rosetta Stone, Antikythera Mechanism, and more. Users can register, login, add artifacts, like artifacts, and manage their own submissions.
 
 ## 🌐 Live Website
-👉 [Visit Live Site](https://your-live-site-url.web.app)
+👉 [Visit Live Site](https://artifacts-tracker-9558c.web.app/)
 
 ---
 
