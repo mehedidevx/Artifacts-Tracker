@@ -147,7 +147,7 @@ const AllArtifacts = () => {
           🏺 Explore Historical Artifacts
         </h2>
 
-        {/* 🔍 Search */}
+        {/*Search */}
         <div className="mb-8 flex justify-center gap-2">
           <input
             type="text"
