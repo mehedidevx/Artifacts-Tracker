@@ -12,7 +12,7 @@ const ArtifactDetails = () => {
   const API_BASE = "http://localhost:3000";
 
   useEffect(() => {
-    // Check if already liked by this user
+    //Check if already liked by this user
     if (currentUser?.email) {
       axios
         .get(`${API_BASE}/likedArtifacts?userEmail=${currentUser.email}`)
