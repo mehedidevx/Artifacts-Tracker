@@ -43,7 +43,7 @@ const FeatureArtifacts = () => {
                 />
               </div>
 
-              {/* Title     */}
+              {/* Title       */}
               <h3 className="text-lg font-semibold">{item.name}</h3>
 
               {/* Description */}
