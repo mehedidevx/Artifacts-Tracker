@@ -53,7 +53,7 @@ const AllArtifacts = () => {
       console.error(err);
       toast.error("Failed to load artifacts.");
     } finally {
-      setLoading(false); // fetch শেষ হলে false
+      setLoading(false);
     }
   };
 
