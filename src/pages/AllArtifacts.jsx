@@ -97,7 +97,7 @@ const AllArtifacts = () => {
           }
         });
     } else {
-      // 👉 Like Logic
+      // Like Logic
       const likeData = {
         artifactId: artifact._id,
         userEmail: user.email,
