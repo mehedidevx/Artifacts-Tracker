@@ -34,7 +34,7 @@ const FeatureArtifacts = () => {
               {/* Favorite Icon */}
               <div className="absolute top-3 right-3"></div>
 
-              {/* Image*/}
+              {/*Image*/}
               <div className="h-48 overflow-hidden rounded-lg mb-3">
                 <img
                   src={item.image}
