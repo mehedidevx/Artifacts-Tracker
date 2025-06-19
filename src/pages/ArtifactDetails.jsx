@@ -103,7 +103,7 @@ const ArtifactDetails = () => {
             </p>
           </div>
 
-          {/* Interest Button */}
+          {/*Interest Button */}
           <button
             onClick={toggleInterest}
             className={`w-full py-3 rounded-lg text-center font-semibold transition mt-4 flex justify-center items-center gap-2 ${
