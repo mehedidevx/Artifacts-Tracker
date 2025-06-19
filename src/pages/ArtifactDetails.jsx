@@ -123,7 +123,7 @@ const ArtifactDetails = () => {
               : "I'm Interested!"}
           </button>
 
-          {/* Contact Info */}
+          {/*Contact Info*/}
           {interested && (
             <div className="mt-6 bg-white/10 p-4 rounded-lg border border-white/20">
               <h2 className="text-lg font-semibold mb-2 text-white">Contact Information</h2>
