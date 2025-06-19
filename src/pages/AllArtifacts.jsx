@@ -45,7 +45,7 @@ const AllArtifacts = () => {
   }, [user]);
 
   const fetchArtifacts = async (search = "") => {
-    setLoading(true); // শুরুতে loading true
+    setLoading(true); 
     try {
       const res = await axios.get(`${API_BASE}/artifacts?search=${search}`);
       setAllArtifacts(res.data || []);
