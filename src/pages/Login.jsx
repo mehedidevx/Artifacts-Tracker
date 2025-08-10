@@ -53,7 +53,7 @@ const Login = () => {
       </Helmet>
       <div className="w-full max-w-md bg-white rounded-xl shadow-lg p-8">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-6">
-          Login to <span className="text-indigo-600">RoommateFinder</span>
+          Login in
         </h2>
 
         <form onSubmit={handleSignUp} className="space-y-4">
