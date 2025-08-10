@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiMapPin } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-base-200 flex items-center justify-center px-4">
+    <div className="min-h-screen bg-[#0b1120] flex items-center justify-center px-4">
       <motion.div
         className="max-w-3xl text-center"
         initial={{ opacity: 0, y: 50 }}
@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Email */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-6"
+            className="bg-white text-black rounded-lg shadow-lg p-6"
             whileHover={{ scale: 1.05 }}
           >
             <FiMail className="text-4xl mx-auto text-purple-500 mb-4" />
@@ -31,7 +31,7 @@ const Contact = () => {
 
           {/* Phone */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-6"
+            className="bg-white text-black rounded-lg shadow-lg p-6"
             whileHover={{ scale: 1.05 }}
           >
             <FiPhone className="text-4xl mx-auto text-pink-500 mb-4" />
@@ -41,7 +41,7 @@ const Contact = () => {
 
           {/* Address */}
           <motion.div
-            className="bg-white rounded-lg shadow-lg p-6"
+            className="bg-white text-black rounded-lg shadow-lg p-6"
             whileHover={{ scale: 1.05 }}
           >
             <FiMapPin className="text-4xl mx-auto text-red-500 mb-4" />

@@ -49,7 +49,7 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-2 items-center">
           <NavLink to="/" className={navLinkClass}>
-            <FiHome className="inline" /> Home
+            <FiHome className="inline" /> Home 
           </NavLink>
           <NavLink to="/all-artifacts" className={navLinkClass}>
             <FiSearch className="inline" /> All Artifacts
