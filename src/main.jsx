@@ -23,6 +23,8 @@ import AddArtifact from "./pages/AddArtifact.jsx";
 import ArtifactDetails from "./pages/ArtifactDetails.jsx";
 import UpdateArtifacts from "./pages/UpdateArtifacts.jsx";
 import MyLikedArtifacts from "./pages/MyLikedArtifacts.jsx";
+import Contact from "./components/Contact.jsx";
+import About from "./components/About.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -46,6 +48,14 @@ const router = createBrowserRouter([
         path: "/all-artifacts",
         loader: () => fetch("https://artifacts-tracker-server-eta.vercel.app/artifacts"),
         element: <AllArtifacts></AllArtifacts>,
+      },
+      {
+        path: "/contact",
+        element: <Contact></Contact>
+      },
+      {
+        path: "/about",
+        element: <About></About>
       },
       {
         path: "/my-artifacts",

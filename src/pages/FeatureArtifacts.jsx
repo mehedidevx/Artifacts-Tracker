@@ -80,7 +80,7 @@ const FeatureArtifacts = () => {
         {artifacts.length > 6 && (
           <div className="text-center mt-10">
             <Link to="/all-artifacts">
-              <button className="px-6 py-2 bg-gradient-to-r from-pink-500 to-purple-500 text-white rounded-xl font-medium hover:opacity-90 transition cursor-pointer">
+              <button className="px-6 py-2 bg-blue-600 text-white rounded-xl font-medium hover:opacity-90 transition cursor-pointer">
                 See More
               </button>
             </Link>

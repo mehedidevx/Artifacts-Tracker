@@ -11,13 +11,13 @@ const CallToAction = () => {
       <div className="flex flex-col sm:flex-row justify-center gap-4">
         <Link
           to="/signup"
-          className="bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+          className="bg-blue-600 font-semibold px-6 py-3 rounded-lg hover:bg-transparent border hover:text-white transition"
         >
           Get Started Free
         </Link>
         <Link
           to="/all-artifacts"
-          className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-purple-900 transition"
+          className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-600  transition"
         >
           Browse Artifacts
         </Link>

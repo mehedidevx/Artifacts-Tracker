@@ -10,7 +10,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Banner = () => {
   const btns = [
     <Link to="/all-artifacts" key="all-artifacts">
-      <button className="flex cursor-pointer items-center gap-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white px-6 py-2 rounded shadow hover:opacity-90 transition">
+      <button className="flex cursor-pointer items-center gap-2 bg-blue-600 text-white px-6 py-2 rounded shadow hover:opacity-90 transition">
        Explore Artifact
       </button>
     </Link>,

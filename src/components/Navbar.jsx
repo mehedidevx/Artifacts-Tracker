@@ -10,7 +10,10 @@ import {
   FiHeart,
   FiMenu,
   FiX,
+
 } from "react-icons/fi";
+import { FcAbout } from "react-icons/fc";
+import { LuContact } from "react-icons/lu";
 import { AuthContext } from "../providers/AuthProvider";
 
 const Navbar = () => {
@@ -31,12 +34,12 @@ const Navbar = () => {
   const navLinkClass = ({ isActive }) =>
     `block px-3 py-2 rounded-md font-medium ${
       isActive
-        ? "bg-white/20 text-purple-400"
-        : "hover:text-purple-400 hover:bg-white/10"
+        ? "bg-blue-600 "
+        : "hover:bg-blue-600"
     }`;
 
   return (
-    <nav className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-white shadow-md">
+    <nav className="bg-gradient-to-r from-[#0f0c29] via-[#302b63] to-[#24243e] text-white shadow-md py-2">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Logo */}
         <Link to="/" className="text-2xl font-bold bg-gradient-to-r from-purple-400 via-pink-400 to-red-500 bg-clip-text text-transparent">
@@ -44,18 +47,25 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <div className="hidden md:flex gap-6 items-center">
+        <div className="hidden md:flex gap-2 items-center">
           <NavLink to="/" className={navLinkClass}>
             <FiHome className="inline" /> Home
           </NavLink>
           <NavLink to="/all-artifacts" className={navLinkClass}>
             <FiSearch className="inline" /> All Artifacts
           </NavLink>
+          
           {user && (
             <NavLink to="/add-artifact" className={navLinkClass}>
               <FiPlusCircle className="inline" /> Add Artifact
             </NavLink>
           )}
+          <NavLink to="/about" className={navLinkClass}>
+           <FcAbout className="inline" /> About
+          </NavLink>
+          <NavLink to="/contact" className={navLinkClass}>
+            <LuContact className="inline"/> Contact
+          </NavLink>
         </div>
 
         {/* User / Login */}
@@ -156,7 +166,7 @@ const Navbar = () => {
                 </button>
                 <button
                   onClick={() => {
-                    navigate("/liked-artifacts");
+                    navigate("/like-artifacts");
                     setMenuOpen(false);
                   }}
                   className="block w-full text-left hover:text-purple-400"

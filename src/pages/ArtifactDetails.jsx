@@ -9,7 +9,7 @@ const ArtifactDetails = () => {
   const currentUser = { email: "mehedi.devx@gmail.com" }; // Replace with actual auth user
   const [interested, setInterested] = useState(false);
   const [likeCount, setLikeCount] = useState(artifact.likeCount || 0);
-  const API_BASE = "http://localhost:3000";
+  const API_BASE = "https://artifacts-tracker-server-eta.vercel.app";
 
   useEffect(() => {
     //Check if already liked by this user

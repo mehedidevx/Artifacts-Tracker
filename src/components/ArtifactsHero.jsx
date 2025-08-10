@@ -13,7 +13,7 @@ const ArtifactsHero = () => {
         <div className="divider">Discover Artistry</div>
         
         <div className="flex justify-center mt-6">
-          <button className="btn btn-primary">View Artifacts</button>
+          <button className="btn btn-primary bg-blue-600 border-none">View Artifacts</button>
         </div>
       </div>
 
@@ -25,7 +25,7 @@ const ArtifactsHero = () => {
         </p>
         
         <div className="flex justify-end">
-          <button className="btn btn-secondary">Read Discoveries</button>
+          <button className="btn text-white bg-blue-600 border-none">Read Discoveries</button>
         </div>
       </div>
     </div>
