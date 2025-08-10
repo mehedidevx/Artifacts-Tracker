@@ -15,6 +15,7 @@ import {
 import { FcAbout } from "react-icons/fc";
 import { LuContact } from "react-icons/lu";
 import { AuthContext } from "../providers/AuthProvider";
+import Theme from "./theme";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -67,13 +68,16 @@ const Navbar = () => {
             <LuContact className="inline"/> Contact
           </NavLink>
         </div>
-
+         
         {/* User / Login */}
-        <div className="relative hidden md:block">
+        <div className="relative hidden md:flex items-center gap-3">
+           <div>
+           <Theme></Theme>
+          </div>
           {!user ? (
             <Link
               to="/login"
-              className="flex items-center gap-1 hover:text-blue-400"
+              className="flex items-center btn bg-blue-600 gap-1 "
             >
               <FiLogIn /> Login
             </Link>
@@ -180,9 +184,16 @@ const Navbar = () => {
                   <FiLogOut className="inline" /> Logout
                 </button>
               </div>
+               
             </>
+            
           )}
+         <div className="p-3 space-y-2">
+           <Theme  />
+         </div>
+         
         </div>
+        
       )}
     </nav>
   );
